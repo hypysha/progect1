@@ -81,4 +81,3 @@ setInterval(() => {
         window.location.reload();
     }
 }, 100);
-
