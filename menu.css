@@ -1,0 +1,31 @@
+body {
+    background-image: url("img/mult.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+   }
+   
+   button {
+    width: 200px;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #fbf9f9;
+    color: rgb(10, 10, 10);
+    border: 16px solid rgb(4, 4, 4);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   button:hover {
+    background-color: #1ef145;
+   }
+   

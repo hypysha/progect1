@@ -1,31 +1,26 @@
-const videos = [
-    "video/alladin.mp4",
-    "video/Arnold.mp4",
-    "video/bitl.mp4",
-    "video/chd.mp4",
-    "video/chp.mp4",
-    "video/chudesa.mp4",
-    "video/cotopes.mp4",
-    "video/fish.mp4",
-    "video/kb.mp4",
-    "video/kim.mp4",
-    "video/loloandstitch.mp4",
-    "video/monstrs.mp4",
-    "video/peppa.mp4",
-    "video/pf.mp4",
-    "video/pokemons.mp4"
-];
-  
-  function playRandomVideo() {
-    const randomIndex = Math.floor(Math.random() * videos.length);
-    const videoSrc = videos[randomIndex];
-    const videoFrame = document.getElementById("video-frame");
-    videoFrame.setAttribute("src", videoSrc);
-  }
+var video = document.getElementById("myVideo");
 
-  function goToVideos() {
-    window.location.href = "videos.html";
+var menuBtn = document.getElementById("menuBtn");
+var againBtn = document.getElementById("againBtn");
+
+function playRandomVideo() {
+  var videos = ["woody.mp4", "utki.mp4", "tm.mp4", "smesh.mp4", "sd.mp4", "sb.mp4", "robot.mp4", "pokemons.mp4"];
+
+  var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+  video.src = "video/" + randomVideo;
+
+  video.play();
 }
-function goToIndex() {
-    location.href = "index.html";
-  }
+
+playRandomVideo();
+
+menuBtn.addEventListener("click", function() {
+  window.location.href = "menu.html";
+});
+
+againBtn.addEventListener("click", function() {
+  playRandomVideo();
+});
+
+  

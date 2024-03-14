@@ -4,15 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="mult.css">
-  <title>nostalgia</title>
- </head>
- <body>
-  <div id="video-container">
-    <iframe id="video-frame" ></iframe>
-  </div>
-  <button id="more-btn" onclick="goToVideos()">more</button>
-  <button id="index-btn" onclick="goToIndex()">back</button>
-  <button id="other-btn" onclick="playRandomVideo()">watch</button>
-  <script src="mult.js"></script>
- </body>
-</html>
+  <title>random</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video" id="myVideo" autoplay controls>
+        <source src="video/woody.mp4" type="video/mp4">
+        <source src="video/woody.webm" type="video/webm">
+        <source src="video/utki.mp4" type="video/mp4">
+        <source src="video/utki.webm" type="video/webm">
+        <source src="video/tm.mp4" type="video/mp4">
+        <source src="video/tm.webm" type="video/webm">
+        <source src="video/smesh.mp4" type="video/mp4">
+        <source src="video/smesh.webm" type="video/webm">
+        <source src="video/sd.mp4" type="video/mp4">
+        <source src="video/sd.webm" type="video/webm">
+        <source src="video/sb.mp4" type="video/mp4">
+        <source src="video/sb.webm" type="video/webm">
+        <source src="video/robot.mp4" type="video/mp4">
+        <source src="video/robot.webm" type="video/webm">
+        <source src="video/pokemons.mp4" type="video/mp4">
+        <source src="video/pokemons.webm" type="video/webm">
+      </video>
+      <div>
+        <button class="btn" id="menuBtn">Menu</button>
+        <button class="btn" id="againBtn">Again</button>
+      </div>
+    </div>
+    <script src="mult.js"></script>
+  </body>
+  </html>
