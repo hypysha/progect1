@@ -1,0 +1,71 @@
+#game{
+    height: 570px;
+    width: 900px;
+    background-image: url('img/back.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border: 4px solid black;
+    margin-left: 13%;
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+body{
+    background-color: #e1f2de;
+}
+
+#pillar1{
+    position: absolute;
+    width: 50px;
+    height: 50%;
+    background-image: url('img/stolb.png');
+    transform: rotate(180deg);
+
+}
+
+#pillar2{
+    position: absolute;
+    width: 50px;
+    height: 30%;
+    top: 80%;
+    background-image: url('img/stolb.png');
+}
+
+.obs{
+    left: 95%;
+    animation: move 4s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+@keyframes move {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -6%;
+    }
+}
+
+#spider{
+    position: absolute;
+    top: 210px;
+    left: 90px;
+}
+
+#spider img{
+    height: 100px;
+    width: 120px;
+}
+
+#score{
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-top: 2%;
+}
