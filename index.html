@@ -1,72 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>nostalgia</title>
- <style>
-  body {
-   background-image: url("tv.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-  }
-
-  h1 {
-   color: white;
-   font-size: 48px;
-   text-align: center;
-   margin-top: 100px;
-   text-shadow: 2px 2px 4px #000000;
-  }
-
-  button {
-   font-size: 24px;
-   padding: 12px 24px;
-   background-color:  #ba1e1e;
-   border: none;
-   border-radius: 8px;
-   color: white;
-   cursor: pointer;
-   position: absolute;
-   bottom: 50px;
-   left: 50%;
-   transform: translateX(-50%);
-  }
-
-  button:hover {
-   background-color: #ba1e1e;
-  }
-
-  .container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin-top: 50px;
-  }
-
-  .video {
-   margin: 20px;
-  }
-
-  .play-button {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 48px;
-   color: white;
-   cursor: pointer;
-  }
- </style>
-</head>
-<body>
- <h1>Back to the childhood</h1>
- <button id="start-button">i'm ready</button>
-
- <script>
-  document.getElementById("start-button").addEventListener("click", function() {
-   window.location.href = "videos.html";
-  });
- </script>
-</body>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>nostalgia</title>
+ </head>
+ <body>
+  <h1>Back to the childhood</h1>
+  <button id="start-button">i'm ready</button>
+  <script src="script.js"></script>
+ </body>
 </html>
